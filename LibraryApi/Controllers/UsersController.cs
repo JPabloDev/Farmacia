@@ -12,9 +12,9 @@ namespace LibraryApi.Controllers
     [Authorize(Policy = "SoloAdmins")]
     public class UsersController : ControllerBase
     {
-        private readonly LibraryDbContext _context;
+        private readonly FarmaciaDbContext _context;
 
-        public UsersController(LibraryDbContext context)
+        public UsersController(FarmaciaDbContext context)
         {
             _context = context;
         }

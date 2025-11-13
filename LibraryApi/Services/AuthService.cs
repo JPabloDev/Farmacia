@@ -11,10 +11,10 @@ namespace LibraryApi.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly LibraryDbContext _context;
+        private readonly FarmaciaDbContext _context;
         private readonly IConfiguration _configuration;
 
-        public AuthService(LibraryDbContext context, IConfiguration configuration)
+        public AuthService(FarmaciaDbContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;

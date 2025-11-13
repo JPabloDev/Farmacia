@@ -16,7 +16,5 @@ namespace LibraryApi.Models.Entities
         public string Usuario { get; set; }
         public bool Activo { get; set; } = true;
         public DateTime Fecha_Actualizacion { get; set; }
-        [JsonIgnore]
-        public ICollection<Loans> Prestamos { get; set; }
     }
 }

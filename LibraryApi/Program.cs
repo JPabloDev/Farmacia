@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Agregar conexi�n a SQL Server
-builder.Services.AddDbContext<LibraryDbContext>(options =>
+builder.Services.AddDbContext<FarmaciaDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Configurar JWT
